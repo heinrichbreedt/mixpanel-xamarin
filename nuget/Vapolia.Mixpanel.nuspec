@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Vapolia.Mixpanel</id>
+    <version>1.0.0.0</version>
+    <title>Mixpanel bindings for Xamarin iOS/Android</title>
+    <authors>Benjamin Mayrargue, NinZine</authors>
+    <owners>Benjamin Mayrargue</owners>
+    <licenseUrl>http://www.vapolia.fr</licenseUrl>
+    <projectUrl>https://github.com/softlion/mixpanel-xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Mixpanel bindings for Xamarin</description>
+    <tags>mixpanel xamarin ios android</tags>
+    <releaseNotes>
+      Android Bindings 4.6.4
+      iOS Bindings 2.8.3
+    </releaseNotes>
+  </metadata>
+  <files>
+
+    <!-- droid -->
+    <file src="..\MixpanelAndroid\bin\Release\MixpanelAndroid.dll" target="lib\MonoAndroid\MixpanelAndroid.dll" />
+
+    <!-- ios -->
+    <file src="..\MixpanelBindings\bin\Release\MixpanelBindings.dll" target="lib\Xamarin.iOS\MixpanelBindings.dll" />
+
+  </files>
+</package>

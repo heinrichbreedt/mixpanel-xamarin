@@ -7,3 +7,5 @@ MixpanelBindings/bin
 *.swp
 MixpanelAndroid/bin
 MixpanelAndroid/obj
+/MixpanelAndroid/MixpanelAndroid.csproj.user
+/MixpanelBindings.v12.suo
