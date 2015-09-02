@@ -15,6 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{85094676
 		nuget\Vapolia.Mixpanel.nuspec = nuget\Vapolia.Mixpanel.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "support", "support", "{63F7061D-28C1-4AA6-BF21-CD3400F39B4A}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		Makefile = Makefile
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

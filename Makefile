@@ -18,10 +18,11 @@ libMixpanel-arm64.a:
 	    $(XBUILD) -project $(PROJECT) -target $(TARGET) -sdk iphoneos -arch arm64 -configuration Release clean build
 		    -mv $(PROJECT_ROOT)/build/Release-iphoneos/lib$(TARGET).a $@
 
-libMixpanel.a: libMixpanel-i386.a libMixpanel-armv7.a libMixpanel-arm64.a
-	    lipo -create -output $@ $^
-		-cp $@ ./MixpanelBindings/
-		-cp $@ ./MixpanelBindingsClassic/
+libMixpanel.a: libMixpanel-armv7.a libMixpanel-arm64.a 
+#libMixpanel-i386.a 
+#	    lipo -create -output $@ $^
+#		-cp $@ ./MixpanelBindings/
+#		-cp $@ ./MixpanelBindingsClassic/
 
 clean:
 	    -rm -f *.a *.dll
