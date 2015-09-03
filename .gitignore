@@ -9,3 +9,11 @@ MixpanelAndroid/bin
 MixpanelAndroid/obj
 /MixpanelAndroid/MixpanelAndroid.csproj.user
 /MixpanelBindings.v12.suo
+*.nupkg
+*.xccheckout
+*.xcuserstate
+/MixpanelStaticLibrary/Mixpanel.xcodeproj/project.xcworkspace/xcuserdata/iben.xcuserdatad/WorkspaceSettings.xcsettings
+*.DS_Store
+/MixpanelStaticLibrary/Mixpanel.xcodeproj/xcuserdata/iben.xcuserdatad/xcschemes/Mixpanel.xcscheme
+/MixpanelStaticLibrary/Mixpanel.xcodeproj/xcuserdata/iben.xcuserdatad/xcschemes/xcschememanagement.plist
+*.userprefs

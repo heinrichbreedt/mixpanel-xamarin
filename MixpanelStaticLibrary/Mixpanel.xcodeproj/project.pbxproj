@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53FD2BAA1A5F631B00758067 /* _MPTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2B2E1A5F631B00758067 /* _MPTweakBindObserver.m */; };
-		53FD2BAB1A5F631B00758067 /* libMPCategoryHelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD2B2F1A5F631B00758067 /* libMPCategoryHelpers.a */; };
 		53FD2BAC1A5F631B00758067 /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2B321A5F631B00758067 /* Mixpanel.m */; };
 		53FD2BAD1A5F631B00758067 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2B341A5F631B00758067 /* MPAbstractABTestDesignerMessage.m */; };
 		53FD2BAE1A5F631B00758067 /* MPABTestDesignerChangeRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2B361A5F631B00758067 /* MPABTestDesignerChangeRequestMessage.m */; };
@@ -71,6 +70,7 @@
 		53FD2BE71A5F631B00758067 /* UIColor+MPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2BA51A5F631B00758067 /* UIColor+MPColor.m */; };
 		53FD2BE81A5F631B00758067 /* UIImage+MPAverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2BA71A5F631B00758067 /* UIImage+MPAverageColor.m */; };
 		53FD2BE91A5F631B00758067 /* UIImage+MPImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FD2BA91A5F631B00758067 /* UIImage+MPImageEffects.m */; };
+		BEBFFB411B98709C00E4FD4F /* UIView+MPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBFFB401B98709C00E4FD4F /* UIView+MPHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,7 +89,6 @@
 		53FD29101A5E563300758067 /* libMixpanel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMixpanel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FD2B2D1A5F631B00758067 /* _MPTweakBindObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MPTweakBindObserver.h; sourceTree = "<group>"; };
 		53FD2B2E1A5F631B00758067 /* _MPTweakBindObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MPTweakBindObserver.m; sourceTree = "<group>"; };
-		53FD2B2F1A5F631B00758067 /* libMPCategoryHelpers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMPCategoryHelpers.a; sourceTree = "<group>"; };
 		53FD2B301A5F631B00758067 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		53FD2B311A5F631B00758067 /* Mixpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixpanel.h; sourceTree = "<group>"; };
 		53FD2B321A5F631B00758067 /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
@@ -132,8 +131,6 @@
 		53FD2B571A5F631B00758067 /* MPCGSizeToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCGSizeToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
 		53FD2B581A5F631B00758067 /* MPClassDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPClassDescription.h; sourceTree = "<group>"; };
 		53FD2B591A5F631B00758067 /* MPClassDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPClassDescription.m; sourceTree = "<group>"; };
-		53FD2B5A1A5F631B00758067 /* MPCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseBtn.png; sourceTree = "<group>"; };
-		53FD2B5B1A5F631B00758067 /* MPCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@2x.png"; sourceTree = "<group>"; };
 		53FD2B5C1A5F631B00758067 /* MPDesignerEventBindingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDesignerEventBindingMessage.h; sourceTree = "<group>"; };
 		53FD2B5D1A5F631B00758067 /* MPDesignerEventBindingRequestMesssage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDesignerEventBindingRequestMesssage.m; sourceTree = "<group>"; };
 		53FD2B5E1A5F631B00758067 /* MPDesignerEventBindingResponseMesssage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDesignerEventBindingResponseMesssage.m; sourceTree = "<group>"; };
@@ -212,6 +209,7 @@
 		53FD2BA71A5F631B00758067 /* UIImage+MPAverageColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MPAverageColor.m"; sourceTree = "<group>"; };
 		53FD2BA81A5F631B00758067 /* UIImage+MPImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MPImageEffects.h"; sourceTree = "<group>"; };
 		53FD2BA91A5F631B00758067 /* UIImage+MPImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MPImageEffects.m"; sourceTree = "<group>"; };
+		BEBFFB401B98709C00E4FD4F /* UIView+MPHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MPHelpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53FD2BAB1A5F631B00758067 /* libMPCategoryHelpers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +242,9 @@
 		53FD2B2C1A5F631B00758067 /* Mixpanel */ = {
 			isa = PBXGroup;
 			children = (
+				BEBFFB401B98709C00E4FD4F /* UIView+MPHelpers.m */,
 				53FD2B2D1A5F631B00758067 /* _MPTweakBindObserver.h */,
 				53FD2B2E1A5F631B00758067 /* _MPTweakBindObserver.m */,
-				53FD2B2F1A5F631B00758067 /* libMPCategoryHelpers.a */,
 				53FD2B301A5F631B00758067 /* Media.xcassets */,
 				53FD2B311A5F631B00758067 /* Mixpanel.h */,
 				53FD2B321A5F631B00758067 /* Mixpanel.m */,
@@ -290,8 +287,6 @@
 				53FD2B571A5F631B00758067 /* MPCGSizeToNSDictionaryValueTransformer.m */,
 				53FD2B581A5F631B00758067 /* MPClassDescription.h */,
 				53FD2B591A5F631B00758067 /* MPClassDescription.m */,
-				53FD2B5A1A5F631B00758067 /* MPCloseBtn.png */,
-				53FD2B5B1A5F631B00758067 /* MPCloseBtn@2x.png */,
 				53FD2B5C1A5F631B00758067 /* MPDesignerEventBindingMessage.h */,
 				53FD2B5D1A5F631B00758067 /* MPDesignerEventBindingRequestMesssage.m */,
 				53FD2B5E1A5F631B00758067 /* MPDesignerEventBindingResponseMesssage.m */,
@@ -401,7 +396,7 @@
 		53FD29081A5E563300758067 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Andreas Krohnke";
 				TargetAttributes = {
 					53FD290F1A5E563300758067 = {
@@ -432,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53FD2BD71A5F631B00758067 /* MPSurveyQuestionViewController.m in Sources */,
+				BEBFFB411B98709C00E4FD4F /* UIView+MPHelpers.m in Sources */,
 				53FD2BD61A5F631B00758067 /* MPSurveyQuestion.m in Sources */,
 				53FD2BDA1A5F631B00758067 /* MPTweakInline.m in Sources */,
 				53FD2BCF1A5F631B00758067 /* MPObjectSerializerConfig.m in Sources */,
@@ -535,6 +531,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
