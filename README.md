@@ -1,7 +1,7 @@
 # mixpanel-xamarin
 
 ## Build android: 
-using VS in release mode
+Using VS in release mode
 
 1) Download latest .aar file for mixpanel
 
@@ -29,16 +29,14 @@ make
 
 4) Open the solution in Xamarin Studio Mac, build in release mode
 
-## Create nuget
+## Create the nuget
 
-compile in release mode both libs using the help above
+Compile in release mode both libs using the help above.
 On a command line:
 
 pack.bat
 
-## Thks
+## Credits
 
 https://cocoapods.org/
 NinZine (Andreas Kröhnke)
-
-

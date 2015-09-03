@@ -998,8 +998,8 @@ namespace MixpanelBindings
 
 	// @interface Mixpanel : NSObject
 	[BaseType (typeof (NSObject))]
-	interface Mixpanel {
-
+	public partial interface Mixpanel 
+    {
 		// -(instancetype)initWithToken:(NSString *)apiToken launchOptions:(NSDictionary *)launchOptions andFlushInterval:(NSUInteger)flushInterval;
 		[Export ("initWithToken:launchOptions:andFlushInterval:")]
 		IntPtr Constructor (string apiToken, NSDictionary launchOptions, nuint flushInterval);
@@ -1061,8 +1061,7 @@ namespace MixpanelBindings
 		nfloat MiniNotificationPresentationTime { get; set; }
 
 		// @property (atomic, weak) id<MixpanelDelegate> delegate;
-		[Export ("delegate", ArgumentSemantic.Weak)]
-		[NullAllowed]
+		[NullAllowed, Export ("delegate", ArgumentSemantic.Weak)]
 		NSObject WeakDelegate { get; set; }
 
 		// @property (atomic, weak) id<MixpanelDelegate> delegate;
@@ -1079,7 +1078,7 @@ namespace MixpanelBindings
 
 		// +(Mixpanel *)sharedInstance;
 		[Static, Export ("sharedInstance")]
-		Mixpanel SharedInstance ();
+		Mixpanel SharedInstance { get; }
 
 		// -(void)identify:(NSString *)distinctId;
 		[Export ("identify:")]
@@ -1171,12 +1170,12 @@ namespace MixpanelBindings
 
 		// -(NSString *)libVersion;
 		[Export ("libVersion")]
-		string LibVersion ();
+		string LibVersion { get; }
 	}
 
 	// @interface MixpanelPeople : NSObject
 	[BaseType (typeof (NSObject))]
-	interface MixpanelPeople {
+	public partial interface MixpanelPeople {
 
 		// -(void)addPushDeviceToken:(NSData *)deviceToken;
 		[Export ("addPushDeviceToken:")]
@@ -1230,7 +1229,7 @@ namespace MixpanelBindings
 	// @protocol MixpanelDelegate <NSObject>
 	[Protocol, Model]
 	[BaseType (typeof (NSObject))]
-	interface MixpanelDelegate {
+	public partial interface MixpanelDelegate {
 
 		// @optional -(BOOL)mixpanelWillFlush:(Mixpanel *)mixpanel;
 		[Export ("mixpanelWillFlush:")]
