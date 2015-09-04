@@ -9,11 +9,15 @@
     <licenseUrl>http://www.vapolia.fr</licenseUrl>
     <projectUrl>https://github.com/softlion/mixpanel-xamarin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Mixpanel bindings for Xamarin</description>
+    <description>
+      Mixpanel bindings for Xamarin
+      Android Bindings 4.6.4 for android 4.0.3+
+      iOS Bindings 2.8.3 armv7/simulator/arm64 only
+    </description>
     <tags>mixpanel xamarin ios android</tags>
     <releaseNotes>
-      Android Bindings 4.6.4
-      iOS Bindings 2.8.3
+      Android Bindings 4.6.4 for android 4.0.3+
+      iOS Bindings 2.8.3 armv7/simulator/arm64 only
     </releaseNotes>
   </metadata>
   <files>
