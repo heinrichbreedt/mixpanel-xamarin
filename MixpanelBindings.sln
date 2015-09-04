@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "support", "support", "{63F7
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixPanelBinding.TestIos", "MixPanelBinding.TestIos\MixPanelBinding.TestIos.csproj", "{122B4228-57F5-4DE3-B8C5-752CF10B34A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{7C7D6DB8-C5AA-4DDE-A4EF-C72F2A6F406E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C7D6DB8-C5AA-4DDE-A4EF-C72F2A6F406E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C7D6DB8-C5AA-4DDE-A4EF-C72F2A6F406E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122B4228-57F5-4DE3-B8C5-752CF10B34A0}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{122B4228-57F5-4DE3-B8C5-752CF10B34A0}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{122B4228-57F5-4DE3-B8C5-752CF10B34A0}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{122B4228-57F5-4DE3-B8C5-752CF10B34A0}.Release|Any CPU.Build.0 = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

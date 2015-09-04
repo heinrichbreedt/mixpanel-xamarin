@@ -1,4 +1,5 @@
 using System;
 using ObjCRuntime;
 
-[assembly: LinkWith ("libMixpanel.a", LinkTarget.Simulator | LinkTarget.ArmV7 | LinkTarget.ArmV7s | LinkTarget.Simulator64 | LinkTarget.Arm64, SmartLink = true, ForceLoad = true)]
+[assembly: LinkWith ("libMixpanel.a", LinkTarget.Simulator | LinkTarget.ArmV7 | LinkTarget.ArmV7s | LinkTarget.Simulator64 | LinkTarget.Arm64, SmartLink = true, 
+    Frameworks = "Security SystemConfiguration QuartzCore CFNetwork CoreTelephony", LinkerFlags = "-licucore", ForceLoad = true)]
