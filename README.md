@@ -1,4 +1,4 @@
-# mixpanel-xamarin
+# mixpanel 2.8.3 xamarin bindings
 
 iOS + Android bindings for MixPanel (i386, armv7, arm64).
 i86_64 has been left out because Xamarin linker fails.
