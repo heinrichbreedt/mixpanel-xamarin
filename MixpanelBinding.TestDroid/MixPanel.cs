@@ -37,7 +37,7 @@ namespace MixPanelBinding.TestDroid
 	public class MixPanelStat : IMixPanel
 	{
 		//TODO: USE YOUR OWN MIXPANEL ID !!!
-		const string YourMixPanelId = "7777---------------------";
+		private const string YourMixPanelId = "7777---------------------";
 	    private readonly MixpanelAPI mixpanel;
 
 	    public MixPanelStat(Context context)

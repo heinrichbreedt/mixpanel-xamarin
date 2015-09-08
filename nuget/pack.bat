@@ -7,7 +7,7 @@
 
 set nugetexe=NuGet
 del *.nupkg
-set version=4.6.4.6
+set version=4.6.4.7
 %nugetexe% pack Vapolia.Mixpanel.nuspec -Version "%version%"
 %nugetexe% push Vapolia.Mixpanel*.nupkg
 
