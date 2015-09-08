@@ -5,12 +5,12 @@ i86_64 has been left out because Xamarin linker fails.
 armv7s has been left out as it is optional and makes the app size thinner.
 
 #Status
-iOS: working OK on device. Unable to get it to work on simulator.
-Android: linking won't work
+iOS: working OK on device and simulator. It seems it requires the ALT key not the Option key though.  
+Android: linking won't currenlty work. Seems a bug in current Xamarin version. Will check that later this month.
 
 # Usage
 
-To connect to the webinterface, press 4 fingers for 5 seconds on the device, or press the option key + click and hold in the simulator for 5 seconds.
+To connect to the webinterface, open the webinterface in a browser, then on the device press 4 fingers for 5 seconds, or in the simulator press the option (or alt?) key + click and hold both key and clic in the simulator for 5 seconds. The app's window should be rendered in the webinterface.
 
 #Important
 
