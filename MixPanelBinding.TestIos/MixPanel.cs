@@ -17,7 +17,7 @@ namespace MixPanelBinding.TestIos
 	public class MixPanelStat : IMixPanel
 	{
 		//TODO: USE YOUR OWN MIXPANEL ID !!!
-		const string YourMixPanelId = "77CDAB368BB216CAF691703C82D911A6";
+		const string YourMixPanelId = "77---------------------";
 
 		public void LoginUser(string userId)
 		{

@@ -8,17 +8,19 @@ using MonoTouch.NUnit.UI;
 
 namespace MixPanelBinding.TestIos
 {
-	// The UIApplicationDelegate for the application. This class is responsible for launching the
-	// User Interface of the application, as well as listening (and optionally responding) to
-	// application events from iOS.
 	[Register ("UnitTestAppDelegate")]
 	public partial class UnitTestAppDelegate : UIApplicationDelegate
 	{
-		// class-level declarations
 		UIWindow window;
 		TouchRunner runner;
 
-		//
+        /// <summary>
+        /// Required by Mixpanel, otherwise it crashes
+        /// </summary>
+        [Preserve]
+	    public override UIWindow Window { get { return window; } }
+
+	    //
 		// This method is invoked when the application has loaded and is ready to run. In this
 		// method you should instantiate the window, load the UI into it and then make the window
 		// visible.
@@ -27,23 +29,18 @@ namespace MixPanelBinding.TestIos
 		//
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
-			MixPanelStat.Init ();
-
-
-			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			runner = new TouchRunner (window);
+            MixPanelStat.Init();
 
+
+            runner = new TouchRunner (window);
 			// register every tests included in the main application/assembly
 			runner.Add (System.Reflection.Assembly.GetExecutingAssembly ());
 
 			window.RootViewController = new UINavigationController (runner.GetViewController ());
-			
 			// make the window visible
 			window.MakeKeyAndVisible ();
-			
 			return true;
 		}
 	}
 }
-
