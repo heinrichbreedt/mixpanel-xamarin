@@ -1,10 +1,10 @@
 # Mixpanel bindings for Xamarin
 iOS v2.9.1 (armv7, arm64)
-Android 2.8.3 (not working)
+Android 4.7
 
 #Status
-iOS: working OK on device (and simulator if i386 is included in cocoapod). It seems it requires the ALT key not the Option key though.  
-Android: linking won't currenlty work. Seems a bug in current Xamarin version. Will check that later this month.
+iOS: working OK on device only. It seems it requires the ALT key not the Option key though.  
+Android: OK.
 
 # Usage
 To connect to the webinterface, open the webinterface in a browser, then on the device press 4 fingers for 5 seconds, or in the simulator press the option (or alt?) key + click and hold both key and clic in the simulator for 5 seconds. The app's window should be rendered in the webinterface.
@@ -57,12 +57,17 @@ Find which sdk is installed on the mac:
 
     sharpie xcode -sdks
 
-Create a new binding project with the correct sdk identifier. In 2 steps, "init" then "bind":
+Create a new binding project with the correct sdk identifier:
 
 	sharpie pod init iphoneos9.1 Mixpanel
 	(things happens)
 	sharpie pod bind iphoneos9.1 Mixpanel
 	(project is build, .a and .cs files are generated)
+
+Rebuild in release mode the libMixpanel.a file with support for ios 8.0:
+
+	xcodebuild build -project Pods/Pods.xcodeproj -scheme Mixpanel -configuration release VALID_ARCHS='arm64 armv7' ARCHS='arm64 armv7' IPHONEOS_DEPLOYMENT_TARGET=8.0
+	(project is build, .a file is generated)
 
 It generates two .cs files (ApiDefinitions.cs and StructsAndEnums.cs), and the .a file containing the target architectures.
 The following command displays the architectures contained in the .a file.
