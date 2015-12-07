@@ -19,4 +19,6 @@
   <remove-node path="/api/package[@name='com.mixpanel.android.java_websocket']" />
   <remove-node path="/api/package[@name='com.mixpanel.android.java_websocket.handshake']" />
 
+  <remove-node path="/api/package[@name='com.mixpanel.android.mpmetrics']/class[@name='Tweaks']" />
+
 </metadata>

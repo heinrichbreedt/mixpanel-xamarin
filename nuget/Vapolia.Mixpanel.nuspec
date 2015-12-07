@@ -11,13 +11,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Mixpanel bindings for Xamarin
-      Android Bindings 4.6.4 for android 4.0.3+
-      iOS Bindings 2.8.3 armv7/simulator/arm64 only
     </description>
     <tags>mixpanel xamarin ios android</tags>
     <releaseNotes>
-      Android Bindings 4.6.4 for android 4.0.3+
-      iOS Bindings 2.8.3 armv7/simulator/arm64 only
+      Android Bindings 4.7 for android 4.0.3+
+      iOS Bindings 2.9.1 armv7/arm64 only (simulator version i386 is no more available!)
 
       You need MonoAndroid51 compatible projects
     </releaseNotes>
